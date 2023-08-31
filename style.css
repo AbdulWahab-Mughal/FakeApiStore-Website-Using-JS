@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    height: min-content;
+    width: 100%;
+    
+}
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.leftsection{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 45px; */
+    /* background-color: black; */
+    align-self:normal;
+    
+
+}
+.leftsection div{
+    margin: 4px 0px;
+    line-height: 25px;
+}
+.leftsection h3{
+    border-bottom: 2px solid grey;
+}
+
+.rightsection{
+    width: 80%;
+}
+#Cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #BBDEFB;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+@media (max-width:420px) {
+    .section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .leftsection{
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-top: 45px; */
+        /* background-color: black; */
+        align-self:normal;
+        
+    
+    }
+    .leftsection .img img{
+        height: 150px !important;
+    }
+    
+    
+}
+@media (max-width:768px) {
+    .section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .leftsection .img img{
+        height: 200px !important;
+    }
+    
+    
+}
+@media (max-width:1920px) {
+    .section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    label{
+        font-size: 12px;
+    }
+    .leftsection .img img{
+        height: 300px;
+    }
+    
+    
+    
+}
